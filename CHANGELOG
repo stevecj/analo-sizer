@@ -1,3 +1,9 @@
+Version 0.1.10
+- Added more browsers to list of known working thanks to
+  https://www.reddit.com/user/tobozo and
+  https://www.reddit.com/user/CalumSult .
+- Added Contributing section to README.md file.
+
 Version 0.1.9
 - Playing notes using text keys now works in Firefox and Safari
   immediately after clicking a note on the virtual piano

@@ -3,7 +3,7 @@
 global.Analosizer = Analosizer;
 
 function Analosizer( opts ) {
-  var version = '0.1.9'
+  var version = '0.1.10'
     , Engine = require('./analosizer/engine.js')
     , engine = new Engine()
     , textKeyNoteMap = []

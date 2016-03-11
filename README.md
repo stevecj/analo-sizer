@@ -27,6 +27,14 @@ of simultaneously held keys.
    Firefox as if maybe the attack fade-in starts before the note starts
    playing.
 
+## Contributing
+
+1. Fork it ( https://github.com/<my-github-username>/analo-sizer#fork-destination-box )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create new Pull Request
+
 ## Making a Build
 
 Note that the build process requires a `bash`-like environment (generally
@@ -45,10 +53,10 @@ https://docs.npmjs.com/getting-started/installing-node
 ### Clone the repository from github
 
 Change to the directory in which you'll want to have the analo-sizer
-project directory installed, and then clone the analo-sizer repository
+project directory created, and then clone the analo-sizer repository
 from GitHub.
 
-    git clone https://github.com/stevecj/analo-sizer.git
+    git clone https://github.com/your-user-name/analo-sizer.git
 
 ### Install the build dependencies
 
