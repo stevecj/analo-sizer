@@ -5,6 +5,7 @@
   },
   "devDependencies": {
     "browserify": "latest",
+    "babelify": "latest",
     "jshint":  "latest",
     "onchange": "latest"
   },
@@ -12,11 +13,12 @@
     "build": "mkdir -p build && cp src/index.html build/analosizer.html && npm run browserify",
     "prebuild": "npm run lint",
     "lint": "jshint --verbose src/**.js",
-    "browserify": "browserify src/analosizer.js --outfile build/analosizer.js --debug",
+    "browserify": "browserify src/analosizer.js -t babelify --outfile build/analosizer.js --debug",
     "clean": "rm -rf build/*",
     "watch": "onchange 'src/**/*.html' 'src/**/*.js' -v -- npm run build"
   },
   "jshintConfig": {
+    "esversion": 6,
     "browserify": true,
     "laxcomma": true
   }

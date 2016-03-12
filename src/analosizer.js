@@ -89,7 +89,7 @@ function Analosizer( opts ) {
     }
   }
 
-  ractive.on( 'noteOnForMouse', function( rEvent, noteNum ) {
+  ractive.on( 'noteOnForMouse', ( rEvent, noteNum ) => {
     var msEvent = rEvent.original;
 
     if( 'buttons' in msEvent ) {
@@ -102,11 +102,11 @@ function Analosizer( opts ) {
     msEvent.target.focus();
   });
 
-  ractive.on( 'noteOffForMouse', function( rEvent, noteNum ) {
+  ractive.on( 'noteOffForMouse', ( rEvent, noteNum ) => {
     engine.noteOff( noteNum, 'mouse' );
   });
 
-  ractive.on( 'noteOnForTextKey', function( rEvent ) {
+  ractive.on( 'noteOnForTextKey', ( rEvent ) => {
     var kbdEvent = rEvent.original
       , noteNum = textKeyNoteMap[ kbdEvent.keyCode ]
     ;
@@ -136,7 +136,7 @@ function Analosizer( opts ) {
     }
   });
 
-  ractive.on( 'noteOffForTextKey', function( rEvent ) {
+  ractive.on( 'noteOffForTextKey', ( rEvent ) => {
     var kbdEvent = rEvent.original
       , noteNum = textKeyNoteMap[ kbdEvent.keyCode ]
     ;
